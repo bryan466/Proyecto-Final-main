@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/chart.js/2.8.0/chart.js"></script>
+</head>
+<body>
+<canvas id="mychart" width="400" height="400" ></canvas>
+</body>
+<script>
+    var ctx= document.getElementById("mychart").getContext("2d");
+    var mychart = new chart(ctx,{
+        type:"bar",
+        data:{
+            labels:['Amor','Accion', 'Comedia', 'Ciencia ficcion','Terror','Misterio' ],
+            datasets:[{
+                label: 'Generos mas buscados',
+            date: [3,6,6,8,8,6],
+            background: [
+                'rgb(66, 134, 244)',
+                'rgb(74, 135, 72)',
+                'rgb(20, 135, 122)',
+                'rgb(80, 51,  134)',
+                'rgb(74, 135, 72)',
+                'rgb(115, 0, 92)'     
+            ]
+        }]
+    },
+      options:{
+        scales:{
+            yAxes:[{
+                ticks:{
+                    beginAtZero:true
+                }
+            }]
+        }
+      }
+   });
+
+</script>
+
+</html>
