@@ -21,7 +21,7 @@
                    <div class ="title__update">Actualizar</div>
                    <br>
                    <br>
- 
+ */dddddd*/
                     <form class="form--actualizar" action="app/procesar--actualizar.php" method="post">
                         <div class="campo--name--categories">Nombre</div>               
                         <div class="campo--desk--categories">Descripcion</div>  
